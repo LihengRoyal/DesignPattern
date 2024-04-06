@@ -3,9 +3,9 @@
 
 int main() {
     int a = 10, b = 20;
-    Operation* oper = new OperationAdd(a, b);
-    std::cout << oper->getResult() << std::endl;
-    oper = new OperationSub(a, b);
-    std::cout << oper->getResult() << std::endl;
+    Operation* oper = new OperationAdd();
+    std::cout << oper->getResult(a, b) << std::endl;
+    oper = new OperationSub();
+    std::cout << oper->getResult(a, b) << std::endl;
     return 0;
 }
