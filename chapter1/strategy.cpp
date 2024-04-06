@@ -53,9 +53,8 @@ int main() {
     Order od1(100.0, cashPay);
     od1.processPayment();
 
-    PaymentStrategy* creditPay = new CreditPaymentStrategy("1234567",
-                                                           "Heng",
-                                                           "2024-3-20");
+    PaymentStrategy* creditPay = 
+        new CreditPaymentStrategy("1234567", "Heng", "2024-3-20");
     Order od2(100.0, creditPay);
     od2.processPayment();
     return 0;
