@@ -2,6 +2,7 @@
 
 #include "operation.h"
 
+
 class OperFactory {
  public:
     Operation* CreateOperator(char c) {
